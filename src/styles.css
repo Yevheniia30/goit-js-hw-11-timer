@@ -16,5 +16,19 @@ body {
   /*
    * CSS image reference example.
    */
-  background-image: url('./images/bg-pattern.png');
+  /* background-image: url('./images/bg-pattern.png'); */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  font-size: 24px;
+}
+
+.field:not(:last-child) {
+  margin-right: 10px;
 }
