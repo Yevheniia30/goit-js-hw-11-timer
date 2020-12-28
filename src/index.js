@@ -2,11 +2,10 @@ import './styles.css';
 
 const timer = {
   start() {
-    const startTime = Date.now();
+    const eventTime = new Date(2020, 11, 31, 11, 59);
     setInterval(() => {
       const currentTime = Date.now();
-      console.log('start:', startTime);
-      console.log('current:', currentTime);
+      const deltaTime = eventTime - currentTime;
     }, 1000);
   },
 
@@ -16,6 +15,13 @@ const timer = {
 };
 
 // timer.start();
+
+const eventTime = new Date(2020, 11, 31, 11, 59);
+const currentTime = Date.now();
+console.log('event:', eventTime);
+console.log('current:', currentTime);
+const deltaTime = eventTime - currentTime;
+console.log(deltaTime);
 
 /*
  * Оставшиеся дни: делим значение UTC на 1000 * 60 * 60 * 24, количество
