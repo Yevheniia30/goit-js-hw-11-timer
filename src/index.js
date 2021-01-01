@@ -6,6 +6,7 @@ const timer = {
     setInterval(() => {
       const currentTime = Date.now();
       const deltaTime = eventTime - currentTime;
+      console.log(deltaTime);
     }, 1000);
   },
 
