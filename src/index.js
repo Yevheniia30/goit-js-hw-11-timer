@@ -17,7 +17,7 @@ const timer = {
 
 // timer.start();
 
-const eventTime = new Date(2020, 11, 31, 11, 59);
+const eventTime = new Date(2021, 9, 30, 12);
 const currentTime = Date.now();
 console.log('event:', eventTime);
 console.log('current:', currentTime);
