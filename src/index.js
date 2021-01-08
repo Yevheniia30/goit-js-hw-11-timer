@@ -1,8 +1,17 @@
 import './styles.css';
 
+const daysRef = document.querySelector('span[data-value="days"]');
+const hoursRef = document.querySelector('span[data-value="hours"]');
+const minsRef = document.querySelector('span[data-value="mins"]');
+const secsRef = document.querySelector('span[data-value="secs"]');
+console.log(daysRef);
+console.log(hoursRef);
+console.log(minsRef);
+console.log(secsRef);
+
 const timer = {
   start() {
-    const eventTime = new Date(2020, 11, 31, 11, 59);
+    const eventTime = new Date('Oct 30, 2021');
     setInterval(() => {
       const currentTime = Date.now();
       const deltaTime = eventTime - currentTime;
@@ -15,7 +24,7 @@ const timer = {
   },
 };
 
-// timer.start();
+timer.start();
 
 const eventTime = new Date(2021, 9, 30, 12);
 const currentTime = Date.now();
